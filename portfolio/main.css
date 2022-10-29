@@ -728,8 +728,8 @@ dl dd {
     background: #fff;
     border-radius: 14px 14px 14px 14px;
     position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 0; */
+    left: 50px;
     overflow: hidden;
     border: 1px solid #333;
 }
@@ -1447,27 +1447,27 @@ width: 1200px;
 
 
 
-
+/* 화면 작업 */
  .n-con {position:relative;right:0;top:75%;transform:translateY(-50%);}
- .n-con>img:nth-child(1) {position:absolute;bottom:600px;right:250px;opacity:0;transition:.8s;}
-.on .n-con>img:nth-child(1) {width:150px;bottom:0;opacity:1;z-index:1;}
+ .n-con>img:nth-child(1) {bottom:600px;right:250px;margin-bottom: 200px; opacity:0;transition:.8s;}
+.on .n-con>img:nth-child(1) {width:150px;top:22px;bottom:-27px;left:0;opacity:1;z-index:1;}
  .n-con>img:nth-child(2) {position:absolute;bottom:300px;right:160px;opacity:0;transition:.8s;}
 .on .n-con>img:nth-child(2) {width:150px;bottom:0;opacity:1;z-index:1;}
  .n-con>img:nth-child(3) {position:absolute;bottom:600px;right:230px;opacity:0;transition:.8s;z-index:2;}
 .on .n-con>img:nth-child(3) {bottom:700px;opacity:1;z-index:2;}
 
-/* 맥북 목업 */
+/* 컴퓨터화면 */
  .n-mac {position:absolute;width:670px;height: 420px;bottom:700px;right:338px;border-radius:5px;overflow:hidden;opacity:0;transition:.8s;}
-.on .box-wrap {bottom:520px;opacity:1;}
-.box-wrap:hover img {animation: linear mac 12s infinite;}
-@keyframes mac {0% {transform: translateY(0);}50% {transform: translateY(-760px);}100% {transform: translateY(0);}}
+.on .box-wrap {opacity:1;}
+.box-wrap:hover img {animation: linear CB 20s infinite;}
+@keyframes CB {0% {transform: translateY(0);}50% {transform: translateY(-3300px);}100% {transform: translateY(0);}}
 .box-wrap:nth-child(2) .n-con .n-mac:hover img {animation: linear mac2 16s infinite;}
 @keyframes mac2 {0% {transform: translateY(0);}50% {transform: translateY(-1250px);}100% {transform: translateY(0);}}
 
-/* 아이폰 목업 */
-.n-iphone {width:130px;height:280px;position:absolute;bottom:330px;right:210px;border-radius:15px;overflow:hidden;opacity:0;transition:1s;z-index:1;}
-.on .n-iphone {bottom:430px;opacity:1;}
-.m02-slider .n-iphone:hover img {animation: linear iphone 20s infinite;}
-@keyframes iphone {0% {transform: translateY(0);}50% {transform: translateY(-1260px);}100% {transform: translateY(0);}}
-.m02-slider div:nth-child(2) .n-con .n-iphone:hover img {animation: linear iphone2 10s infinite;}
+/* 아이폰 */
+.n-iphone {width:132px;height:286px;position:absolute;top:8px;border-radius:15px;overflow:hidden;opacity:0;transition:1s;z-index:1;}
+.on .n-iphone {left:9px;opacity:1;}
+ .n-iphone:hover img {animation: linear iphone 12s infinite;}
+@keyframes iphone {0% {transform: translateY(0);}50% {transform: translateY(-760px);}100% {transform: translateY(0);}}
+.n-iphone div:nth-child(2) .n-con .n-iphone:hover img {animation: linear iphone2 10s infinite;}
 @keyframes  iphone2 {0% {transform: translateY(0);}50% {transform: translateY(-760px);}100% {transform: translateY(0);}}
